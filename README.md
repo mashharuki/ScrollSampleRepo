@@ -1,6 +1,10 @@
 # ScrollSampleRepo
 Scrollを調査するためのSampleRepoです。
 
+### 検証のためのAPI Keyの取得方法
+
+[https://gnosis.blockscout.com/](https://gnosis.blockscout.com/)にてログインして取得する。
+
 ### 動かし方
 
 - インストール
