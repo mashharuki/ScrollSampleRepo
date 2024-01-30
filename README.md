@@ -27,37 +27,34 @@ Scrollを調査するためのSampleRepoです。
 - テストネットへのデプロイ
 
     ```bash
-    yarn deploy:scrollAlpha
+    yarn deploy:scrollSepolia
     ```
 
     ```bash
-    Lock with 0.001ETH and unlock timestamp 1695472571 deployed to 0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb
+    unlockTime: 1706625379
+    Lock with 0.001ETH and unlock timestamp 1706625379 deployed to 0x67ADc29278d87D87b212C59fDffd2749fe7418c4
+    Done in 3.94s.
     ```
 
     実際にデプロイしたトランザクションの記録. 
 
-    [0x55f836bf130a0f70c69961e28287ced78458e90d5d04bbec29ec21c620e160de](https://scroll.l2scan.co/tx/0x55f836bf130a0f70c69961e28287ced78458e90d5d04bbec29ec21c620e160de)
+    [0xc7aa93266092a41dea76b246f4a18779dddbb45e11b732432c6676ddddd12096](https://sepolia.scrollscan.com/tx/0xc7aa93266092a41dea76b246f4a18779dddbb45e11b732432c6676ddddd12096)
 
 - コントラクトの検証
 
     ```bash
-    yarn verify:scrollAlpha
+    yarn verify:scrollSepolia
     ```
 
     検証結果
 
     ```bash
-    Successfully submitted source code for contract 
-    contracts/Lock.sol:Lock at 0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb
-    for verification on the block explorer. Waiting for verification result...
-
-    Successfully verified contract Lock on the block explorer.
-    https://sepolia-blockscout.scroll.io/address/0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb#code
-    Done in 2.31s.
+    https://sepolia.scrollscan.com/address/0x67ADc29278d87D87b212C59fDffd2749fe7418c4#code
+    Done in 1.23s.
     ```
 
     コントラクトのコード　　
-    [0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb/contracts](https://sepolia-blockscout.scroll.io/address/0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb/contracts#address-tabs)
+    [0x67ADc29278d87D87b212C59fDffd2749fe7418c4#code](https://sepolia.scrollscan.com/address/0x67ADc29278d87D87b212C59fDffd2749fe7418c4#code)
 
 ### 参考文献
 1. [公式ドキュメント](https://guide.scroll.io/developers/developer-quickstart)

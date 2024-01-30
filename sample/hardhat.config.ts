@@ -3,13 +3,14 @@ import "@nomicfoundation/hardhat-toolbox";
 import 'dotenv/config';
 
 const {
-  PRIVATE_KEY
+  PRIVATE_KEY,
+  SCROLLSCAN_API_KEY
 } = process.env;
 
 const config: HardhatUserConfig = {
   solidity: "0.8.19",
   networks: {
-    scrollAlpha: {
+    scrollSepolia: {
       url: 'https://sepolia-rpc.scroll.io/' || '',
       accounts:
         PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
@@ -17,15 +18,15 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      scrollAlpha: 'abc',
+      scrollSepolia: SCROLLSCAN_API_KEY!,
     },
     customChains: [
       {
-        network: 'scrollAlpha',
+        network: 'scrollSepolia',
         chainId: 534351,
         urls: {
-          apiURL: 'https://sepolia-blockscout.scroll.io/api',
-          browserURL: 'https://sepolia-blockscout.scroll.io/',
+          apiURL: 'https://api-sepolia.scrollscan.com/api',
+          browserURL: 'https://sepolia.scrollscan.com/',
         },
       },
     ],
